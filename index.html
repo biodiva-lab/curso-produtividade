@@ -18,7 +18,7 @@
                 <a href="#planos">Planos</a>
                 <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-primary" target="_blank">Inscreva-se</a>
             </div>
-            <div class="menu-toggle" id="menuToggle">
+            <div class="menu-toggle" id="menuToggle" aria-expanded="false" aria-label="Menu de navegação">
                 <i class="fas fa-bars"></i>
             </div>
         </div>
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <!-- Benefícios Section -->
+    <!-- Benefits Section -->
     <section id="beneficios" class="benefits">
         <div class="container">
             <h2>O que você vai aprender</h2>
@@ -90,7 +90,7 @@
 
     <!-- Pricing Section -->
     <section id="planos" class="pricing">
-        <div class="container">
+        <class="container">
             <div class="pricing-header">
                 <h2>Planos de Participação</h2>
             </div>
@@ -107,97 +107,88 @@
                 </ul>
             </div>
 
-            <!-- Lot 1 -->
-            <div class="lot-section">
-                <div class="lot-header">
-                    <h3 class="lot-title">Lote 1</h3>
-                    <p class="lot-dates">22 a 31 de janeiro</p>
+            <!-- Pricing Grid -->
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Plano Essencial</h3>
+                    <p class="price">R$ 90,00</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
+                        <li><i class="fas fa-check"></i> Material didático completo</li>
+                        <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
+                    </ul>
+                    <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
                 </div>
-                <div class="pricing-grid">
-                    <div class="price-card">
-                        <h3>Plano Essencial</h3>
-                        <p class="price">R$ 90,00</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
-                            <li><i class="fas fa-check"></i> Material didático completo</li>
-                            <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
-                        </ul>
-                        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
-                    </div>
 
-                    <div class="price-card popular">
-                        <span class="popular-tag">Mais Popular</span>
-                        <h3>Plano Completo</h3>
-                        <p class="price">R$ 230,00</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
-                            <li><i class="fas fa-check"></i> Material didático completo</li>
-                            <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
-                            <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
-                            <li><i class="fas fa-check"></i> Sessão individual de 30 minutos</li>
-                        </ul>
-                        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-primary" target="_blank">Escolher plano</a>
-                    </div>
+                <div class="price-card popular">
+                    <div class="popular-banner">Mais Popular</div>
+                    <h3>Plano Completo</h3>
+                    <p class="price">R$ 230,00</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
+                        <li><i class="fas fa-check"></i> Material didático completo</li>
+                        <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
+                        <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Sessão individual de 30 minutos</li>
+                    </ul>
+                    <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-primary" target="_blank">Escolher plano</a>
+                </div>
 
-                    <div class="price-card">
-                        <h3>Plano Intermediário</h3>
-                        <p class="price">R$ 140,00</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
-                            <li><i class="fas fa-check"></i> Material didático completo</li>
-                            <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
-                            <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
-                        </ul>
-                        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
-                    </div>
+                <div class="price-card">
+                    <h3>Plano Intermediário</h3>
+                    <p class="price">R$ 140,00</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
+                        <li><i class="fas fa-check"></i> Material didático completo</li>
+                        <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
+                        <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
+                    </ul>
+                    <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
                 </div>
             </div>
+            
 
-            <!-- Lot 2 -->
-            <div class="lot-section">
-                <div class="lot-header">
-                    <h3 class="lot-title">Lote 2</h3>
-                    <p class="lot-dates">1 a 16 de fevereiro</p>
-                </div>
-                <div class="pricing-grid">
-                    <div class="price-card">
-                        <h3>Plano Essencial</h3>
-                        <p class="price">R$ 100,00</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
-                            <li><i class="fas fa-check"></i> Material didático completo</li>
-                            <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
-                        </ul>
-                        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
-                    </div>
-
-                    <div class="price-card popular">
-                        <span class="popular-tag">Mais Popular</span>
-                        <h3>Plano Completo</h3>
-                        <p class="price">R$ 250,00</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
-                            <li><i class="fas fa-check"></i> Material didático completo</li>
-                            <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
-                            <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
-                            <li><i class="fas fa-check"></i> Sessão individual de 30 minutos</li>
-                        </ul>
-                        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-primary" target="_blank">Escolher plano</a>
-                    </div>
-
-                    <div class="price-card">
-                        <h3>Plano Intermediário</h3>
-                        <p class="price">R$ 150,00</p>
-                        <ul>
-                            <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
-                            <li><i class="fas fa-check"></i> Material didático completo</li>
-                            <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
-                            <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
-                        </ul>
-                        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
-                    </div>
-                </div>
+             <!-- 2º Lote -->
+             <div class="lots-heading second-lot">
+                <h3>2º Lote - De 1 a 16 de fevereiro</h3>
             </div>
+
+            <div class="pricing-grid">
+                <div class="price-card">
+                    <h3>Plano Essencial</h3>
+                    <p class="price">R$ 100,00</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
+                        <li><i class="fas fa-check"></i> Material didático completo</li>
+                        <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
+                    </ul>
+                    <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="popular-banner">Mais Popular</div>
+                    <h3>Plano Completo</h3>
+                    <p class="price">R$ 250,00</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
+                        <li><i class="fas fa-check"></i> Material didático completo</li>
+                        <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
+                        <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
+                        <li><i class="fas fa-check"></i> Sessão individual de 30 minutos</li>
+                    </ul>
+                    <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-primary" target="_blank">Escolher plano</a>
+                </div>
+                <div class="price-card">
+                    <h3>Plano Intermediário</h3>
+                    <p class="price">R$ 180,00</p>
+                    <ul>
+                        <li><i class="fas fa-check"></i> Aulas síncronas e assíncronas</li>
+                        <li><i class="fas fa-check"></i> Material didático completo</li>
+                        <li><i class="fas fa-check"></i> Acesso às gravações das aulas</li>
+                        <li><i class="fas fa-check"></i> Grupo exclusivo no WhatsApp</li>
+                    </ul>
+                    <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="btn-secondary" target="_blank">Escolher plano</a>
+                </div>
 
             <!-- Registration Info -->
             <div class="registration-info">
@@ -253,12 +244,16 @@
     </section>
 
     <!-- CTA Section -->
-<section class="cta">
-    <div class="container">
-        <h2>Vai começar a transformar sua produtividade acadêmica?</h2>
-        <p>Vagas limitadas! Aproveite as condições especiais de lançamento.</p>
-        <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="cta-button" target="_blank">
-            Inscreva-se agora
-        </a>
-    </div>
-</section>
+    <section class="cta">
+        <div class="container">
+            <h2>Vai começar a transformar sua produtividade acadêmica?</h2>
+            <p>Vagas limitadas! Aproveite as condições especiais de lançamento.</p>
+            <a href="https://forms.gle/3H4c6y237GS4ABxc9" class="cta-button" target="_blank">
+                Inscreva-se agora
+            </a>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
