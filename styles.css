@@ -1,10 +1,10 @@
 /* Base styles and variables */
 :root {
-    --primary-color: #4F46E5;
-    --primary-hover: #4338CA;
+    --primary-color: #856BE4;
+    --primary-hover: #5C9DF2;
     --secondary-color: #6B7280;
     --background-light: #F9FAFB;
-    --text-dark: #111827;
+    --text-dark: #43424F;
     --text-light: #6B7280;
     --white: #FFFFFF;
     --max-width: 1280px;
@@ -168,6 +168,140 @@ body {
     box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
 }
 
+/* Launch Section */
+.launch-special {
+    max-width: 1000px;
+    margin: 2rem auto 3rem;
+    background: linear-gradient(145deg, #ff9774, #ffc95e);
+    border-radius: 1rem;
+    overflow: hidden;
+    color: #494454;
+}
+
+.launch-header {
+    padding: 3rem 2rem;
+    text-align: center;
+}
+
+.launch-header h3 {
+    font-size: 1.4rem;
+    color: #494454;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.launch-main-text {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1.5rem 0;
+    line-height: 1.2;
+}
+
+.launch-date {
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    color: #494454;
+    font-weight: 500;
+}
+
+.launch-subtitle {
+    font-size: 1.1rem;
+    opacity: 0.9;
+    margin-top: 1rem;
+}
+
+.launch-content {
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.launch-highlight {
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #494454;
+    margin-bottom: 2rem;
+}
+
+.launch-prices {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.plan-highlight {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2rem;
+    border-radius: 1rem;
+    margin-bottom: 2rem;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.plan-highlight h4 {
+    font-size: 1.4rem;
+    color: #494454;
+    margin-bottom: 1rem;
+}
+
+.plan-highlight .price {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+    color: #494454;
+}
+
+.plan-highlight ul {
+    list-style: none;
+    margin: 1.5rem 0;
+}
+
+.plan-highlight li {
+    margin: 0.8rem 0;
+    padding-left: 1.5rem;
+    position: relative;
+}
+
+.plan-highlight li:before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: #494454;
+}
+
+.special-feature {
+    color: #494454;
+    font-weight: 600;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+    padding-bottom: 0.5rem;
+}
+
+.other-plans {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.plan {
+    background: rgba(255, 255, 255, 0.15);
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.plan h4 {
+    color: #494454;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.plan .price {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #494454;
+}
+
 /* Benefits Section */
 .benefits {
     padding: clamp(3rem, 6vw, 4rem) 0;
@@ -234,7 +368,7 @@ body {
 
 .pricing-header h2 {
     font-size: clamp(1.8rem, 4vw, 2.5rem);
-    color: var(--primary-color);
+    color: #43424F;
     margin-bottom: 1rem;
 }
 
@@ -324,7 +458,7 @@ body {
     max-width: 800px;
     margin: 0 auto 3rem;
     padding: clamp(1.5rem, 4vw, 2.5rem);
-    background: linear-gradient(145deg, #4F46E5 0%, #4338CA 100%);
+    background: linear-gradient(145deg, #856BE4 0%, #5C9DF2 100%);
     border-radius: 1rem;
     color: white;
     box-shadow: 0 4px 20px rgba(79, 70, 229, 0.2);
@@ -422,7 +556,7 @@ body {
 
 /* CTA Section */
 .cta {
-    background: linear-gradient(145deg, #4F46E5 0%, #4338CA 100%);
+    background: linear-gradient(145deg, #856BE4 0%, #5C9DF2 100%);
     color: var(--white);
     padding: clamp(3rem, 6vw, 4rem) 0;
     text-align: center;
@@ -445,7 +579,7 @@ body {
     margin: 3rem auto;
     max-width: 600px;
     padding: clamp(1.5rem, 4vw, 2.5rem);
-    background: linear-gradient(145deg, #4F46E5 0%, #4338CA 100%);
+    background: linear-gradient(145deg, #856BE4 0%, #5C9DF2 100%);
     border-radius: 1rem;
     color: white;
     box-shadow: 0 4px 20px rgba(79, 70, 229, 0.2);
@@ -510,6 +644,18 @@ body {
         width: 100%;
         max-width: 300px;
     }
+
+    .launch-main-text {
+        font-size: 1.6rem;
+    }
+    
+    .launch-highlight {
+        font-size: 1.4rem;
+    }
+    
+    .other-plans {
+        grid-template-columns: 1fr;
+    }
 }
 
 @media (max-width: 480px) {
@@ -544,6 +690,18 @@ body {
     .profile-pic {
         width: 200px;
         height: 200px;
+    }
+
+    .launch-special {
+        margin: 1rem;
+    }
+
+    .launch-header {
+        padding: 2rem 1rem;
+    }
+
+    .launch-content {
+        padding: 1.5rem;
     }
 }
 
