@@ -70,30 +70,4 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         });
     });
-
-    // Intersection Observer for animations
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1
-    };
-
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-slide-in');
-                observer.unobserve(entry.target);
-            }
-        });
-    }, observerOptions);
-
-    // Observe elements for animation
-    document.querySelectorAll('.benefit-card, .price-card, .about-content').forEach(el => {
-        observer.observe(el);
-    });
-
-    // Performance optimizations
-    window.addEventListener('load', () => {
-        document.body.classList.add('loaded');
-    });
 });
