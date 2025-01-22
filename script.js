@@ -1,4 +1,3 @@
-
 document.addEventListener('DOMContentLoaded', function() {
     // Elements
     const menuToggle = document.getElementById('menuToggle');
@@ -93,23 +92,8 @@ document.addEventListener('DOMContentLoaded', function() {
         observer.observe(el);
     });
 
-    // Form validation
-    const forms = document.querySelectorAll('form');
-    forms.forEach(form => {
-        form.addEventListener('submit', (e) => {
-            e.preventDefault();
-            // Add your form validation logic here
-        });
-    });
-
-    // Lazy loading images
-    document.querySelectorAll('img').forEach(img => {
-        img.loading = 'lazy';
-    });
-
     // Performance optimizations
     window.addEventListener('load', () => {
-        // Remove any loading classes/spinners
         document.body.classList.add('loaded');
     });
 });
